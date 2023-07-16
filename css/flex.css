@@ -1,0 +1,149 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sign-up{
+    margin-left:auto ;
+}
+
+.menu-container {
+    /* deze flexbox is geplaatst over de  overheersende overkoepelende container, en maakt de childs (werkt alleen bij level 1 childs, de childs van een andere flexcontainer in deze container kan niet beinvloed worden door deze container, buiten het opsluiten van de elementen in dit container) */
+    display: flex;
+    /* width: 700px; */
+    background-color: #5995DA;
+    padding: 20px 0;
+    /* color: white; */
+    color: #fff;
+    border: 2px solid red;
+    justify-content: center;
+
+    
+    /* box-sizing: border-box; */
+    
+}
+.menu {
+    /* width: 400px; */
+    /* border: 2px red; */
+    border: 2px solid orange;
+
+    /* de width maakt gebruik van de beschikbare width van .menu-container */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    /* display flex en justify content heeft alleen effect op de(childs) van .menu. buiten de childs van .menu heeft menu geen invloed op de childs van de childs van ,menu*/
+    
+}
+
+.menu-container div{
+    text-align: center;
+    padding: 5px;
+    background-color: gray;
+    margin: 2px;
+}
+html , body {
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+.login {
+    /* margin-left: 20px; */
+}
+.links .login{
+    margin-left: 20px;
+}
+
+.menu-container .menu div:nth-child(1){
+    /* background-color: rgb(0, 255, 76); */
+}
+.menu-container .menu div:nth-child(2){
+    /* background-color: purple; */
+}
+
+.links {
+    display: flex;
+    /* width: 300px; */
+    /* width: 200px; */
+    justify-content: flex-end;
+}
+
+.header-container {
+    /* display flex veranderd de box in een flexbox. */
+    display: flex;
+    background-color: #D6E9FE;
+    /* padding: 20px; */
+    color:#5995DA ;
+    justify-content: center;
+    /* border: 2px solid red; */
+    /* margin: 10px; */
+}
+.subscribe , .social {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.header{
+display: flex;
+justify-content: space-between;
+width: 900px;
+height: 300px;
+/* border: 2px solid orange; */
+/* met dit code aan de flexcontainer geef je genestelde elements in de header een verticale alignment, hiermee kan je de elementen van boven naar beneden besturen */
+align-items: center;
+}
+.subscribe, .logo .logo{
+    border: 1px solid red;
+}
+
+.foto-grid-container{
+    display: flex;
+    justify-content: center;
+}
+.foto-grid{
+    flex-wrap: wrap;
+/* align-items: flex-end; */
+display: flex;
+width: 900px;
+justify-content: center;
+
+/* flex-direction: column; */
+flex-direction: row;
+align-items: center;
+}
+.foto-grid-item{
+    /* display: flex; */
+    border: 2px solid rebeccapurple;
+    width: 300px;
+    height:300px;
+    /* justify-content: space-around; */
+
+}
+.first-item{
+    order: 1;
+}
+.last-item {
+    order: -1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    background-color: #D6E9FE;
+    border: 2px solid red;
+    height: 200px;
+    flex: 1;
+}
+.footer-three {
+    flex: 2;
+}
+
+.footer-one , .footer-three {
+    width: 300px;
+    flex: initial;
+    background-color:#5995DA;
+}

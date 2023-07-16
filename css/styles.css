@@ -1,7 +1,66 @@
-.extern {
+/* .extern {
     background-color: red;
     color: white;
     font-size: 32px;
     text-align: center;
     font-style: bold;
+} */
+
+* {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ol {
+    list-style: none;
+    
+}
+.container .title , .recipe-info a {
+    text-transform: uppercase;
+
+}
+
+body {
+    background-color: white;
+}
+.recipe-content {
+    vertical-align: top;
+    width: 200px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.container {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+}
+.recipe-card {
+    width: 400px;
+}
+.recipe-info {
+    background-color: grey;
+    /* box-sizing: border-box; */
+    list-style: none;
+    display: inline-block;
+    width: 400px;
+}
+.recipe-info a {
+    /* list-style: none; */
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    margin: 5px;
+    /* background-color: brown; */
+}
+.container img {
+    width: 300px;
+    height: 200px;
+    /* display: inline-block; */
+}
+img {
+    display: inline-block;
+    vertical-align: top;
 }

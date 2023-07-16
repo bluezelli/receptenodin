@@ -1,0 +1,59 @@
+/* .container .text {
+    font-size: 20px;
+    background-color: yellow;
+    color: red;
+} */
+
+
+/* .para , .smallpara {
+    font-weight: 800;
+}
+
+.para {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+p.small-para {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+
+/* .smallpara {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+} */
+/* #confirm-button {
+    background-color: green;
+}
+
+div .child {
+    font-size: 12px;
+    font-weight: 1299;
+} */ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-card{
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: grey;
+    
+
+}
+
+.recipe-content {
+    width: 500px;
+    /* background-color: grey; */
+    display: inline-block;
+}
+img {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 300px;
+}

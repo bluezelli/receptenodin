@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.recipe-card {
+    width: 800px;
+    background-color: grey;
+    margin: 20px auto;
+    padding: 20px;
+}
+.recipe-content {
+    width: 500px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 2px;
+   
+}
+.recipe-content a {
+    text-decoration: none;
+    padding: 2px;
+    background-color: yellow;
+    /* margin-top: 2px; */
+}
